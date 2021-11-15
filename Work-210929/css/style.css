@@ -1,0 +1,9 @@
+.TableHead{
+	background-color: #D7E3BD;
+	text-align: left;
+}
+
+table td{
+	width: 100px;
+	text-align: center;
+}

@@ -1,0 +1,62 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: "rage italic",sans-serif;
+	box-sizing: border-box;
+	text-decoration: none;
+}
+
+body{
+	background: url(../img/bg.jpg) no-repeat center;
+	background-size: cover;
+	display: flex;
+	/* 内容屏幕居中呈现 */
+	min-height: 100vh;
+	/* 物品的水平居中 */
+	align-items: center;
+	justify-content: center;
+}
+
+.container{
+	max-width: 1200px;
+	padding: 0 40px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.image{
+	width: 50%;
+	margin: 21px;
+}
+
+.accordion-menu{
+	width: salc(50%-20px)
+}
+
+.title{
+	background-color: #e77f67;
+	/* 固定之后宽度一致？ */
+	display: flex;
+	padding: 20px;
+	font-size: 14px;
+	font-weight: bold;
+	color: white;
+	text-transform: uppercase;
+	justify-content: space-between;
+	
+}
+
+.icon{
+	width: 13px;
+	position: relative;
+}
+
+.text{
+	background-color: #ffffff60;
+	color: white;
+	line-height: 26px;
+	margin: 30px 0;
+	padding: 14px;
+}
+

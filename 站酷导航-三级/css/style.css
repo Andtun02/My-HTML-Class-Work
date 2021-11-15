@@ -1,0 +1,44 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+div.pack{
+	background-color: #ffe300;
+	height: 56px;
+	width: 100%;
+}
+
+div.menu-box{
+	margin: 0 70px;
+}
+
+div.logo{
+	position: absolute;
+	top: 18px;
+}
+
+div.menu{
+	
+}
+
+ul.menu-list{
+	display: inline-block;
+	height: 56px;
+	background-color: #87CEEB;
+}
+
+ul.menu-list li{
+	list-style: none;
+	height: 56px;
+	line-height: 56px;
+	float: left;
+}
+
+ul.menu-list li a{
+	color: #282828;
+	font-size: 14px;
+	text-decoration: none;
+	padding: 0 24px;
+	
+}

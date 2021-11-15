@@ -1,0 +1,58 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.h-box{
+	height: 45px;
+	background-color: #2e9dec;
+}
+
+.imgs-box{
+	background-color: #2E9DEC;
+	width: 1024px;
+	height: 306px;
+	margin: 0 auto;
+}
+
+.igms-list{
+	width: 1024px;
+	height: 306px;
+	overflow: hidden;
+}
+
+.igms-list li{
+	width: 1024px;
+	height: 306px;
+	list-style: none;
+}
+
+.igms-list img{
+	height: 100%;
+	width: 100%;
+}
+
+.change-box{
+	margin: -30px auto;
+	width: 1000px;
+	height: 30px;
+	background-color: rgba(0,0,0,0.4);
+	position: relative;
+}
+
+.change-button{
+	margin-right: 13px;
+}
+
+.change-button a{
+	float: right;
+	margin: 7px 1px;
+	width: 17px;
+	height: 17px;
+	background-color: #ffffff;
+	border-radius: 50%;
+}
+
+.change-button a:hover{
+	background-color: #ff0000;
+}

@@ -1,0 +1,40 @@
+h1{
+	text-align: center;
+	letter-spacing: 1em;
+	color: #676765;
+	font-weight: normal;
+}
+
+h1 span{
+	color: #0054B5;
+}
+
+.infoBox{
+	font-weight: bold;
+	text-align: center;
+	color: #676765;
+	font-family: "仿宋";
+}
+
+.infoBox span{
+	color: #0054B5;
+}
+
+.textBox span{
+	color: #FF263B;
+}
+
+.endBox{
+	font-weight: bold;
+	font-style: italic;
+	color: #676765;
+	font-family: "仿宋";
+}
+
+.endBox span{
+	margin-left: 8em;
+}
+
+.endBox a{
+	color: #0054B5;
+}

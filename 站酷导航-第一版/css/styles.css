@@ -1,0 +1,345 @@
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+}
+
+/* 反反复复重新写了好几次，终于给干废了 */
+
+/* 总容器 */
+.box{
+	width: 100%;
+	height: 56px;
+	background-color: #ffe300;
+}
+
+/* bar */
+.menu-bar{
+	/* 感觉不会再爱html了 */
+	background-color: #ffe300;
+	min-width: 1200px;
+	margin: 0 70px;
+	/* background-color: green; */
+	display: flex;
+}
+
+/* Logo */
+.logo{
+	/* background-color: red; */
+	padding-top: 18px;
+	/* line-height: 56px; */
+}
+/* 菜单容器 */
+.menu-box{
+	width: 648px;
+	margin: 0 auto;
+	/* background-color: red; */
+	display: block;
+}
+
+/* 列表 */
+.nav{
+	height: 56px;
+}
+
+/* Item */
+.item{
+	float: left;
+}
+
+/* 一级 */
+.one{
+	display: block;
+	padding: 0 23px;
+	text-align: center;
+	line-height: 56px;
+	/* border: 1px solid; */
+	font-size: 14px;
+	color: #252525;
+}
+
+.one:hover{
+	background-color: #252525;
+	color: #FFE300;
+	
+}
+
+/* new-红点 */
+#new{
+	position: absolute;
+	margin: 19px 3px;
+	background-color: #ff4a3b;
+	height: 8px;
+	width: 8px;
+	border-radius: 50px;
+}
+
+#two-new{
+	position: absolute;
+	margin: 15px 3px;
+	background-color: #ff4a3b;
+	height: 8px;
+	width: 8px;
+	border-radius: 50px;
+}
+
+/* new-视频 */
+#new-video{
+	position: absolute;
+	margin: 3px -17px;
+}
+
+#new-video2{
+	position: absolute;
+	margin: 13px 6px;
+}
+
+/* 确认 */
+#sure{
+	font-weight: bold;
+}
+
+/* ··· */
+#so-on{
+	font-weight: bold;
+	font-size: 15px;
+	letter-spacing: 0.1em;
+}
+
+/* 二级 */
+.two{
+	position: absolute;
+	width: 148px;
+	display: none;
+	padding-top: 7px;
+	padding-bottom: 7px;
+	box-shadow:  1px 1px 10px rgb(0 0 0 / 20%);
+	border-radius: 0 0 4px 4px;
+}
+
+/* 发现-一级 */
+.look-item{
+	float: left;
+}
+
+.look-item:hover .look-all{
+	display: block;
+}
+
+/* 发现所有 */
+.look-all{
+	background-color: #fff;
+	display: none;
+	position: absolute;
+	width: 780px;
+	height: 478px;
+	padding-bottom: 7px;
+}
+
+.look-text{
+	margin:21px 0 0 170px ;
+}
+
+.title span{
+	font-size: 20px;
+}
+
+#img1{
+	float: right;
+}
+
+/* 发现-二级 */
+.look-two{
+	position: absolute;
+	width: 148px;
+	padding-top: 7px;
+	padding-bottom: 7px;
+	box-shadow:  1px 1px 10px rgb(0 0 0 / 20%);
+	border-radius: 0 0 4px 4px;
+	/* 滚动条 */
+	overflow-x:scroll;
+	overflow-x: hidden;
+	height: 471px;
+}
+/* 滚动条样式 */
+.look-two::-webkit-scrollbar {/*滚动条整体样式*/
+        width: 6px;     /*高宽分别对应横竖滚动条的尺寸*/
+}
+.look-two::-webkit-scrollbar-thumb {/*滚动条里面小方块*/
+        border-radius: 5px;
+        background: #cccccc;
+}
+	
+.item2{
+	height: 44px;
+	line-height: 44px;
+}
+
+.item2 a{
+	padding-left: 20px;
+	font-size: 14px;
+	color: #252525;
+	background-color: #fff;
+	display: block;
+	width: 128px;
+	position: absolute;
+}
+
+.item2 a:hover{
+	background-color: #FFE300;
+}
+
+.item:hover .two{
+	display: block;
+}
+
+/* 搜索图标 */
+.search{
+	width: 60px;
+	height: 56px;
+}
+
+.search:hover{
+	background-color: #252525;
+	cursor: pointer;
+}
+
+.search:hover i{
+	background: url(../img/nav-search-hover.svg);
+}
+
+.search i{
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	margin: 18px;
+	background: url(../img/nav-search.svg);
+}
+
+/* 上传图标 */
+.upload{
+	width: 60px;
+	height: 56px;
+}
+
+.upload:hover{
+	background-color: #252525;
+	cursor: pointer;
+}
+
+.upload:hover i{
+	background: url(../img/nav-upload-hover.svg);
+}
+
+.upload i{
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	margin: 18px;
+	background: url(../img/nav-upload.svg);
+}
+
+/* 上传图片-二级 */
+.upload:hover .up-two{
+	display: block;
+}
+
+.upload .up-two{
+	margin-top: -3px;
+	display: none;
+	width: 148px;
+	padding-top: 7px;
+	padding-bottom: 7px;
+	box-shadow:  1px 1px 10px rgb(0 0 0 / 20%);
+	border-radius: 0 0 4px 4px;
+}
+
+
+/* 登录注册 */
+.user{
+	display: inline-block;
+	height: 56px;
+	width: 137px;
+	line-height: 59px;
+	text-align: center;
+	cursor: pointer;
+}
+
+.user a{
+	color: #252525;
+}
+
+.user:hover{
+	background-color: #252525;
+}
+
+.user:hover a{
+	color: #FFE300;
+}
+
+.user:hover span{
+	color: #FFE300;
+}
+
+/* 登录注册二级 */
+.user:hover .user-two{
+	display: block;
+}
+
+.user-two{
+	margin-top: -3px;
+	display: none;
+	width: 191px;
+	height: 187;
+	float: right;
+	padding-top: 7px;
+	padding-bottom: 7px;
+	box-shadow:  1px 1px 10px rgb(0 0 0 / 20%);
+	border-radius: 0 0 4px 4px;
+	font-size: 14px;
+}
+
+/* 分割 */
+.isHR{
+	display: block;
+	width: 80%;
+	margin: 0 auto;
+}
+
+/* 介绍 */
+.user-two #a{
+	background: url(../img/nav-share.svg);
+	background-repeat: no-repeat;
+	background-position: 23px center;
+	height: 44px;
+	line-height: 44px;
+}
+.user-two #b{
+	background: url(../img/nav-comment.svg);
+	background-repeat: no-repeat;
+	background-position: 23px center;
+	height: 44px;
+	line-height: 44px;
+}
+.user-two #c{
+	background: url(../img/nav-col.svg);
+	background-repeat: no-repeat;
+	background-position: 23px center;
+	height: 44px;
+	line-height: 44px;
+}
+/* 登录按钮 */
+.user-two #button{
+	display: block;
+	width: 80%;
+	height: 36px;
+	line-height: 36px;
+	color: #252525;
+	background-color: #FFE300;
+	margin: 0 auto;
+}
+
+.user-two #button:hover{
+	background-color: #ffd100;
+}

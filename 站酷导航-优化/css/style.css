@@ -1,0 +1,396 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+/* ---------------------- */
+/* new-红点 */
+#new{
+	position: absolute;
+	margin: 19px 3px;
+	background-color: #ff4a3b;
+	height: 8px;
+	width: 8px;
+	border-radius: 50px;
+}
+/* new-二级红点 */
+#new-two{
+	position: absolute;
+	margin: 15px 3px;
+	background-color: #ff4a3b;
+	height: 8px;
+	width: 8px;
+	border-radius: 50px;
+}
+/* 被选中 */
+#sure{
+	font-weight: bold;
+}
+/* new-视频特惠 */
+#new-video{
+	position: absolute;
+	margin: 3px -17px;
+}
+/* new-套餐半价 */
+#new-hd{
+	position: absolute;
+	margin: 13px 6px;
+}
+/* 更多的三个点点 */
+#so-on{
+	font-weight: bold;
+	font-size: 15px;
+	letter-spacing: 0.1em;
+}
+/* ---------------------- */
+
+/* 顶部画布 */
+.canvas{
+	background-color: #ffe300;
+	height: 56px;
+	width: 100%;
+}
+
+/* 菜单盒子 */
+.menu-box{
+	background-color: #ffe300;
+	/* background-color: red; */
+	min-width: 1200px;
+	height: 56px;
+	margin: 0 70px;
+}
+
+/* Logo */
+.logo{
+	padding-top: 18px;
+	float:left;
+}
+
+/* 菜单 */
+.menu{
+	width: 648px;
+	margin: 0 auto;
+	display: block;
+}
+
+.menu-box li{
+	list-style: none;
+}
+
+.menu-box a{
+	color: #282828;
+	text-decoration: none;
+}
+
+/* 物品 */
+.nav .item{
+	float:left;
+}
+.item:hover .two{
+	display: block;
+}
+
+/* ---------------------- */
+/* 一级 */
+.one{
+	display: block;
+	padding: 0 23px;
+	text-align: center;
+	line-height: 56px;
+	font-size: 14px;
+}
+
+/* 悬停 */
+.one:hover{
+	background-color: #282828;
+	color: #ffe300;
+}
+/* ---------------------- */
+
+/* ---------------------- */
+/* 二级 */
+.two{
+	display: none;
+	position: fixed;
+	padding-top: 7px;
+	padding-bottom: 7px;
+	box-shadow:  1px 1px 10px rgb(0 0 0 / 20%);
+	border-radius: 0 0 4px 4px;
+}
+
+/* 样式 */
+.two a{
+	/* background-color: #7FFFD4; */
+	display: block;
+	width: 152px;
+	height: 44px;
+	line-height: 44px;
+	padding-left: 20px;
+	font-size: 14px;
+}
+
+/* 悬停 */
+.two a:hover{
+	background-color: #FFE300;
+}
+/* ---------------------- */
+
+#menu-right{
+	float: right;
+}
+#r-box{
+	display: inline-block;
+	width: 60px;
+	height: 56px;
+}
+/* ---------------------- */
+/* 搜索图标 */
+.search i{
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	margin: 18px;
+	background: url(../img/nav-search.svg);
+}
+
+/* 悬停 */
+.search:hover{
+	background-color: #282828;
+	cursor: pointer;
+}
+.search:hover i{
+	background: url(../img/nav-search-hover.svg);
+}
+/* ---------------------- */
+
+/* ---------------------- */
+/* 上传图标 */
+.upload i{
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	margin: 18px;
+	background: url(../img/nav-upload.svg);
+}
+/* 悬停 */
+.upload:hover{
+	background-color: #282828;
+	cursor: pointer;
+}
+.upload:hover i{
+	background: url(../img/nav-upload-hover.svg);
+}
+.upload:hover #upload-two{
+	display: block;
+	margin-top: -3px;
+}
+/* ---------------------- */
+
+/* ---------------------- */
+/* 登录注册 */
+.user{
+	float: right;
+	height: 56px;
+	width: 137px;
+	line-height: 56px;
+	text-align: center;
+	cursor: pointer;
+}
+.user a{
+	color: #252525;
+	font-size: 14px;
+}
+.user:hover{
+	background-color: #252525;
+}
+.user:hover a{
+	color: #FFE300;
+}
+
+.user a:hover{
+	font-weight: bold;
+}
+
+
+.user:hover span{
+	color: #FFE300;
+}
+.user:hover .user-two{
+	display: block;
+}
+
+.user-two{
+	display: none;
+	float: right;
+	width: 191px;
+	height: 187;
+	padding-top: 7px;
+	padding-bottom: 7px;
+	box-shadow:  1px 1px 10px rgb(0 0 0 / 20%);
+	border-radius: 0 0 4px 4px;
+	font-size: 14px;
+}
+
+/* 分割 */
+.isHR{
+	display: block;
+	width: 80%;
+	margin: 0 auto;
+}
+
+/* 介绍 */
+.user-two #a{
+	background: url(../img/nav-share.svg);
+	background-repeat: no-repeat;
+	background-position: 23px center;
+	height: 44px;
+	line-height: 44px;
+}
+.user-two #b{
+	background: url(../img/nav-comment.svg);
+	background-repeat: no-repeat;
+	background-position: 23px center;
+	height: 44px;
+	line-height: 44px;
+}
+.user-two #c{
+	background: url(../img/nav-col.svg);
+	background-repeat: no-repeat;
+	background-position: 23px center;
+	height: 44px;
+	line-height: 44px;
+}
+/* 登录按钮 */
+.user-two #button{
+	display: block;
+	width: 80%;
+	height: 36px;
+	line-height: 36px;
+	color: #252525;
+	background-color: #FFE300;
+	margin: 0 auto;
+}
+
+.user-two #button:hover{
+	background-color: #ffd100;
+}
+/* ---------------------- */
+
+/* 发现 */
+.look-canvas{
+	position: fixed;
+	display: none;
+	background-color: #fff;
+	width: 780px;
+	height: 478px;
+	padding-top: 7px;
+	padding-bottom: 7px;
+	box-shadow:  1px 1px 10px rgb(0 0 0 / 20%);
+	border-radius: 0 0 4px 4px;
+}
+
+/* 左边 */
+.look-left{
+	position: fixed;
+	width: 157px;
+	padding: 7px 0;
+	background-color: #f8f8f8;
+/* 	box-shadow:  1px 1px 10px rgb(0 0 0 / 20%);
+	border-radius: 0 0 4px 4px; */
+	/* 滚动条 */
+	overflow-x:scroll;
+	overflow-x: hidden;
+	height: 471px;
+}
+/* 滚动条样式 */
+.look-left::-webkit-scrollbar {/*滚动条整体样式*/
+        width: 6px;     /*高宽分别对应横竖滚动条的尺寸*/
+}
+.look-left::-webkit-scrollbar-thumb {/*滚动条里面小方块*/
+        border-radius: 5px;
+        background: #cccccc;
+}
+
+.look-left a{
+	height: 44px;
+	line-height: 44px;
+	display: block;
+	padding-left: 20px;
+	font-size: 14px;
+	color: #252525;
+	background-color: transparent;;
+	width: 128px;
+}
+
+/* 悬停 */
+.look-left a:hover{
+	background-color: #FFE300;
+}
+
+#look-item:hover .look-canvas{
+	display: block;
+}
+
+/* ----------------------- */
+/* 右边 */
+.look-right{
+	position: fixed;
+	margin: 0 170px ;
+	height: 478px;
+	width: 365px;
+}
+
+.look-right a{
+	display: flex;
+	padding: 25px 0;
+	width: 365px;
+	height: 28px;
+	border-bottom: 1px solid #EEE;
+}
+
+.look-right span{
+	padding-left: 10px;
+	font-size: 20px;
+	color: #444;
+}
+
+/* ------------------------ */
+/* 右边bar */
+.look-right-bar{
+	position: fixed;
+	margin:0 540px ;
+	width: 168px;
+	height: 478px;
+}
+
+.look-right-bar a{
+	display: flex;
+	height: 40px;
+	height: 49px;
+}
+
+.look-icons{
+	display: flex;
+	height: 78px;
+	align-items: center;
+	border-bottom: 1px solid #EEE;
+}
+
+.look-icons a{
+	display: inline-flex;
+	flex-flow: column;
+	width: 40px;
+	height: 49;
+	align-items: center;
+	margin: 0 10px;
+}
+
+.look-icons img{
+	width: 40px;
+	height: 28px;
+	margin-bottom: 5px;
+}
+
+.look-icons span{
+	font-size: 12px;
+	
+}

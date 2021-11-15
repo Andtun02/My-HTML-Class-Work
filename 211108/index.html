@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" type="text/css" href="css/styles.css" />
+        <title>表单</title>
+    </head>
+    <body>
+        <h1>注册</h1>
+        <div class="box">
+            <form action="" method="post">
+                <div class="item">
+                    <label>用户名: </label>
+                    <input
+                        class="in"
+                        type="text"
+                        value="重生之一岁单打独斗"
+                        disabled=""
+                    />
+                </div>
+                <div class="item">
+                    <label>密码: </label>
+                    <input
+                        class="in"
+                        type="password"
+                        placeholder="请使用英文、数字"
+                    />
+                </div>
+                <div class="item">
+                    <label>确认密码: </label>
+                    <input class="in" type="password" />
+                </div>
+                <div class="item">
+                    <label>性别: </label>
+                    <input type="radio" name="sex" checked="" />女
+                    <input type="radio" name="sex" />男
+                </div>
+                <div class="item">
+                    <label>标签: </label>
+                    <input type="checkbox" />吃饭 <input type="checkbox" />睡觉
+                    <input type="checkbox" />打豆豆
+                </div>
+                <div class="item">
+                    <label>家庭住址: </label>
+                    <select style="width: 210px" class="in">
+                        <option value="0">贵阳市</option>
+                        <option value="1">遵义市</option>
+                        <option value="2">六盘水市</option>
+                        <option value="3">凯里市</option>
+                    </select>
+                </div>
+                <div class="item">
+                    <label>个人简历: </label>
+                    <textarea class="intro" rows="3px" cols=""></textarea>
+                </div>
+                <div class="btns">
+                    <input type="submit" />
+                    <input type="reset" value="清空" />
+                    <button>H5新增按钮</button>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>

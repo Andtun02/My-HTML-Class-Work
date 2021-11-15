@@ -1,0 +1,85 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.h-box{
+	height: 45px;
+	background-color: #2e9dec;
+}
+.h-box span{
+	width: 350px;
+	height: 45px;
+	line-height: 45px;
+	color: #f6f9ff;
+}
+/* ---------------------------------- */
+
+div.slide{
+	position: relative;
+	width: 1024px;
+	height: 308px;
+	margin: 0 auto;
+	text-align: center;
+	overflow: hidden;
+}
+
+.slide ul{
+	width: 9999px;
+}
+
+.slide li{
+	float: left;
+	width: 1024px;
+	height: 308px;
+	list-style: none;
+	line-height: 309px;
+	font-size: 102px;
+}
+
+.slide li:nth-child(1) {
+    background: #9fa8ef;
+}
+
+.slide li:nth-child(2) {
+    background: #ef9fb1;
+}
+
+.slide li:nth-child(3) {
+    background: #9fefc3;
+}
+
+.slide li:nth-child(4) {
+    background: #EF9FB1;
+}
+
+.slide li:nth-child(5) {
+    background: #FFD100;
+}
+
+/* ------------------------------------ */
+
+.change-box{
+	margin: -30px auto;
+	width: 1000px;
+	height: 30px;
+	background-color: rgba(0,0,0,0.4);
+	position: relative;
+}
+
+.change-button{
+	margin-right: 13px;
+}
+
+.change-button a{
+	float: right;
+	margin: 7px 1px;
+	width: 17px;
+	height: 17px;
+	background-color: #ffffff;
+	border-radius: 50%;
+}
+
+.change-button a:hover{
+	background-color: #ff0000;
+}
