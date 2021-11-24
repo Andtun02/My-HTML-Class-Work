@@ -3,20 +3,24 @@
     padding: 0;
 }
 
+body {
+    background: #0bb4df;
+}
+
 /* 骨灰盒 */
 .box {
     width: 500px;
     height: 800px;
-    margin: 20px auto;
-    border: 1px solid;
+    margin: 40px auto;
+    /* border: 1px solid; */
     position: relative;
 }
 
 /* 带头 */
 .head {
-    width: 400px;
+    width: 410px;
     height: 380px;
-    border: 1px solid;
+    border: 3px solid;
     border-radius: 48%;
     position: absolute;
     top: 10px;
@@ -28,42 +32,45 @@
         #3acaee,
         #0bb4df
     );
+    box-shadow: -7px 10px 17px #6b6c69;
 }
 
 /* 大脸盆子 */
 .face {
+    z-index: 1;
     width: 340px;
     height: 270px;
-    border: 1px solid;
+    border: 3px solid;
     border-radius: 48%;
     background: white;
     position: absolute;
-    bottom: 10px;
-    left: 29px;
+    bottom: 19px;
+    left: 33px;
 }
 
 .eyes {
     width: 90px;
     height: 110px;
-    border: 1px solid;
-    border-radius: 42px;
+    border: 3px solid;
+    border-radius: 43px;
     background: white;
     position: absolute;
     top: -40px;
+    overflow: hidden;
 }
 
 .left {
     border-top-right-radius: 45px;
-    left: 78px;
+    left: 75px;
 }
 .right {
     border-top-left-radius: 45px;
-    right: 78px;
+    right: 75px;
 }
 
 .ball {
-    width: 15px;
-    height: 15px;
+    width: 20px;
+    height: 20px;
     border-radius: 50%;
     background: black;
     position: absolute;
@@ -77,4 +84,280 @@
 .right .ball {
     left: 15px;
     bottom: 20px;
+}
+
+/* 鼻子 */
+.nose {
+    width: 42px;
+    height: 42px;
+    border: 3px solid;
+    border-radius: 50%;
+    position: absolute;
+    top: 60px;
+    left: 146px;
+    background: -webkit-radial-gradient(30px 10px, 7px 7px, white, #c93e00);
+}
+
+.rz {
+    width: 0;
+    height: 100px;
+    border: 1px solid;
+    position: absolute;
+    left: 169px;
+    top: 107px;
+}
+
+.mouth {
+    width: 300px;
+    height: 280px;
+    border: 3px solid;
+    border-radius: 50%;
+    position: absolute;
+    left: 18px;
+    bottom: 60px;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    border-right-color: transparent;
+}
+
+.huzi {
+    width: 80px;
+    border: 1px solid;
+    position: absolute;
+}
+
+.hz1 {
+    left: 20px;
+    top: 90px;
+    transform: rotate(20deg);
+}
+
+.hz2 {
+    left: 20px;
+    top: 115px;
+}
+
+.hz3 {
+    left: 20px;
+    top: 140px;
+    transform: rotate(-20deg);
+}
+
+.hz4 {
+    right: 20px;
+    top: 90px;
+    transform: rotate(-20deg);
+}
+
+.hz5 {
+    right: 20px;
+    top: 115px;
+}
+
+.hz6 {
+    right: 20px;
+    top: 140px;
+    transform: rotate(20deg);
+}
+
+/* 脖子 */
+.neck {
+    z-index: 100;
+    width: 305px;
+    height: 70px;
+    position: relative;
+    top: 342px;
+    left: 100px;
+}
+
+.belt {
+    width: 305px;
+    height: 24px;
+    background: linear-gradient(#bd400d, #830b01);
+    border: 3px solid;
+    border-radius: 12px;
+    box-shadow: -9px 0px 17px #6b6c69;
+    position: absolute;
+}
+
+/* 铃铛 */
+.bell {
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(#f8f530, #aaae2c);
+    box-shadow: -7px 7px 17px #6b6c69;
+    border: 3px solid;
+    border-radius: 50%;
+    position: absolute;
+    left: 130px;
+    top: 12px;
+}
+.bell .tL {
+    width: 44px;
+    height: 3px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    border: 3px solid;
+    position: absolute;
+    top: 10px;
+}
+.bell .oR {
+    width: 20px;
+    height: 16px;
+    background: black;
+    border-radius: 50%;
+    position: absolute;
+    top: 24px;
+    left: 15px;
+}
+.bell .oL {
+    width: 0;
+    height: 10px;
+    border: 2px solid;
+    position: absolute;
+    top: 36px;
+    left: 23px;
+}
+.glow {
+    box-shadow: 19px 8px 9px #fff;
+    width: 27px;
+    height: 15px;
+}
+
+/* 身体 */
+.st {
+    width: 302px;
+    height: 234px;
+    position: absolute;
+    background: -webkit-gradient(
+        linear,
+        right top,
+        left top,
+        from(#07beea),
+        color-stop(0.5, #0073b3),
+        color-stop(0.75, #00b0e0),
+        to(#0096be)
+    );
+    top: 362px;
+    left: 103px;
+}
+
+.lagLine {
+    position: absolute;
+    width: 299px;
+    height: 170px;
+    border: 3px solid;
+    border-top: transparent;
+    border-bottom: transparent;
+    bottom: 204px;
+    left: 103px;
+}
+
+/* 白肚子 */
+.dz {
+    position: absolute;
+    width: 234px;
+    height: 224px;
+    border: 3px solid;
+    background: -webkit-linear-gradient(45deg, #444 1%, white 30%);
+    border-radius: 50%;
+    top: 327px;
+    left: 134px;
+}
+
+/* 口袋 */
+.kd {
+    position: absolute;
+    width: 134px;
+    height: 134px;
+    border: 3px solid;
+    border-top: transparent;
+    border-radius: 50%;
+    background: -webkit-linear-gradient(45deg, #444 1%, white 30%);
+    bottom: 18px;
+    left: 48px;
+}
+
+.kd .line {
+    position: absolute;
+    width: 140px;
+    height: 62px;
+    background: white;
+    border: 3px solid;
+    border-left: transparent;
+    border-right: transparent;
+    border-top: transparent;
+    left: -3px;
+}
+
+.arm {
+    position: absolute;
+    z-index: -1;
+    width: 67px;
+    height: 89px;
+    border: 3px solid;
+    top: 365px;
+    box-shadow: -7px 10px 17px #6b6c69;
+}
+
+.al {
+    background: #0097c0;
+    transform: rotate(60deg);
+    left: 55px;
+}
+
+.ar {
+    background: #07beea;
+    transform: rotate(-60deg);
+    right: 45px;
+}
+
+.hand {
+    width: 75px;
+    height: 75px;
+    border-radius: 45%;
+    background: linear-gradient(white, #e1e1e1);
+    border: 3px solid;
+    position: absolute;
+    bottom: -60px;
+    left: -8px;
+    box-shadow: -7px 10px 17px #6b6c69;
+}
+
+.lag {
+    width: 165px;
+    height: 40px;
+    background: white;
+    position: absolute;
+    bottom: 160px;
+    border: 3px solid;
+    box-shadow: -7px 10px 17px #6b6c69;
+}
+
+.ll {
+    left: 75px;
+    border-radius: 35px;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 50px;
+}
+
+.lr {
+    right: 68px;
+    border-radius: 35px;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 50px;
+}
+
+.out {
+    position: absolute;
+    width: 35px;
+    height: 20px;
+    background: #0bb4df;
+    border-top: 3px solid #000;
+    border-right: 3px solid #000;
+    border-left: 3px solid #000;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    bottom: 202px;
+    left: 233px;
 }
