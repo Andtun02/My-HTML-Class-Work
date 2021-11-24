@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* 骨灰盒 */
+.box {
+    width: 500px;
+    height: 800px;
+    margin: 20px auto;
+    border: 1px solid;
+    position: relative;
+}
+
+/* 带头 */
+.head {
+    width: 400px;
+    height: 380px;
+    border: 1px solid;
+    border-radius: 48%;
+    position: absolute;
+    top: 10px;
+    left: 49px;
+    background: -webkit-radial-gradient(
+        370px 40px,
+        200px 100px,
+        white,
+        #3acaee,
+        #0bb4df
+    );
+}
+
+/* 大脸盆子 */
+.face {
+    width: 340px;
+    height: 270px;
+    border: 1px solid;
+    border-radius: 48%;
+    background: white;
+    position: absolute;
+    bottom: 10px;
+    left: 29px;
+}
+
+.eyes {
+    width: 90px;
+    height: 110px;
+    border: 1px solid;
+    border-radius: 42px;
+    background: white;
+    position: absolute;
+    top: -40px;
+}
+
+.left {
+    border-top-right-radius: 45px;
+    left: 78px;
+}
+.right {
+    border-top-left-radius: 45px;
+    right: 78px;
+}
+
+.ball {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: black;
+    position: absolute;
+}
+
+.left .ball {
+    right: 15px;
+    bottom: 20px;
+}
+
+.right .ball {
+    left: 15px;
+    bottom: 20px;
+}
