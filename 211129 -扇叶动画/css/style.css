@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #024d5a;
+}
+
+.box {
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background: linear-gradient(75deg, #024d5a 30%, #016d7a 70%);
+    box-shadow: 0 0 80px #025663;
+    position: relative;
+    margin: 30px auto;
+}
+
+.box span {
+    display: block;
+    width: 35px;
+    height: 200px;
+    background: rgb(193, 66, 75, 0.9);
+    border: 1px solid;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    position: absolute;
+    left: 48%;
+    top: 150px;
+    box-shadow: 0 -1px 3px #444;
+    /* 字体样式 */
+    font-weight: 600;
+    font-size: 18px;
+    color: #e3a170;
+    text-align: center;
+    /* 旋转 */
+    transform-origin: 50% 90%;
+    transition: all 0.8s;
+}
+
+.box:hover :nth-child(1) {
+    transform: rotateZ(-80deg);
+    box-shadow: -7px 0 17px #444;
+}
+.box:hover :nth-child(2) {
+    transform: rotateZ(-68deg);
+}
+.box:hover :nth-child(3) {
+    transform: rotateZ(-56deg);
+}
+.box:hover :nth-child(4) {
+    transform: rotateZ(-44deg);
+}
+.box:hover :nth-child(5) {
+    transform: rotateZ(-32deg);
+}
+.box:hover :nth-child(6) {
+    transform: rotateZ(-20deg);
+}
+.box:hover :nth-child(7) {
+    transform: rotateZ(-8deg);
+}
+.box:hover :nth-child(8) {
+    transform: rotateZ(4deg);
+}
+.box:hover :nth-child(9) {
+    transform: rotateZ(16deg);
+}
+.box:hover :nth-child(10) {
+    transform: rotateZ(28deg);
+}
+.box:hover :nth-child(11) {
+    transform: rotateZ(40deg);
+}
+.box:hover :nth-child(12) {
+    transform: rotateZ(52deg);
+}
+.box:hover :nth-child(13) {
+    transform: rotateZ(64deg);
+}
+.box:hover :nth-child(14) {
+    transform: rotateZ(76deg);
+    box-shadow: 7px 0 17px #444;
+}
