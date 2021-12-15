@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>JS计算器</title>
+    </head>
+    <body>
+        <input id="a" type="number" />
+        <select id="oper">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+            <option value="%">%</option>
+        </select>
+        <input id="b" type="number" />
+        <input id="res" type="text" />
+        <button id="btn">计算</button>
+
+        <script>
+            window.onload = function () {
+                //拿到数据框
+                var oA = document.getElementById("a");
+                var oOper = document.querySelector("#oper");
+                var oB = document.getElementById("b");
+                var oRes = document.querySelector("#res");
+                var oBtn = document.getElementById("btn");
+
+                // 按下计算
+                oBtn.onclick = function () {
+                    var num1 = oA.value;
+                    var num2 = oB.value;
+                    var oper = oOper.value;
+
+                    switch (oper) {
+                        case "+":
+                            oRes.value = num1 + num2;
+                            break;
+                        case "-":
+                            oRes.value = num1 - num2;
+                            break;
+                        case "*":
+                            oRes.value = num1 * num2;
+                            break;
+                        case "/":
+                            oRes.value = num1 / num2;
+                            break;
+                        case "%":
+                            oRes.value = num1 % num2;
+                            break;
+
+                        default:
+                            alert("暂不支持该运算！");
+                            break;
+                    }
+                };
+            };
+        </script>
+    </body>
+</html>
